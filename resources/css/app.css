@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-kanit scroll-smooth
+}
+
+body {
+    @apply bg-body
+}
+
+.experiences-ft {
+    animation: experiences-ft 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes experiences-ft {
+    0% {
+        top: 30px;
+    }
+
+    100% {
+        top: 25px;
+    }
+}
+.project-ft {
+    animation: project-ft 1.1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes project-ft {
+    0% {
+        top: 34px;
+    }
+
+    100% {
+        top: 22px;
+    }
+}
+.useful-ft {
+    animation: useful-ft 1.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes useful-ft {
+    0% {
+        top: 14px;
+    }
+
+    100% {
+        top: 22px;
+    }
+}
+
+.experiences-sd {
+    animation: experiences-sd 1.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes experiences-sd {
+    0% {
+        top: 14px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+.project-sd {
+    animation: project-sd 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes project-sd {
+    0% {
+        top: 16px;
+    }
+
+    100% {
+        top: 22px;
+    }
+}
+.useful-sd {
+    animation: useful-sd 1.6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes useful-sd {
+    0% {
+        top: 40px;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* services overlay */
+.services-overlay {
+    animation: services-overlay 0.5s;
+}
+
+@keyframes services-overlay {
+    0% {
+        @apply opacity-0
+    }
+
+    100% {
+        @apply opacity-100
+    }
+}
+
+/* project overlay */
+.container-project-overflow::-webkit-scrollbar {
+    @apply w-1
+}
+
+.container-project-overflow::-webkit-scrollbar-thumb {
+    @apply bg-gray-500
+}
+
+.project-overlay {
+    animation: services-overlay 0.5s;
+}
+
+.session-services {
+    animation: session-services 0.5s;
+}
+
+/* session services */
+@keyframes session-services {
+    0% {
+        transform: translateY(-110%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.email-detail::-webkit-scrollbar {
+            @apply w-1 h-[3px]
+        }
+
+.email-detail::-webkit-scrollbar-thumb {
+    @apply bg-orange-theme rounded-lg;
+}
